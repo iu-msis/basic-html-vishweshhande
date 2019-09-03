@@ -11,15 +11,15 @@
             <!--Compiled and minified JavaScript-->
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-            <link rel="stylesheet" href="styles.css">
+            <link rel="stylesheet" href="css/style.css">
 
     </head>
 
     <body style="background-color:lightgrey">
     <h1>
-        <center><img src="" height=50px></a><strong>Vishwesh Hande</strong></center></h1>
+        <center><img src="" height=50px><strong>Vishwesh Hande</strong></center></h1>
 
-    <nav class="navbar navbar-inverse navbar-text nav-justified">
+    <nav class="navbar navbar-inverse">
 
             <ul class="nav navbar-nav">
 				<li><a href="index.html">Home</a></li>
@@ -27,18 +27,19 @@
 				<li><a href="books.html">Recently Read</a></li>
             </ul>
     </nav>
-<div>
-<h2><strong><center>Recommended Titles</center></strong></h2>
 
-<table class="table table-hover table-condensed table-striped table-bordered">
+<h2><strong><center>Recommended Titles</center></strong></h2>
+<div class="container-fluid text-center bg-2">
+<table class="table table-condensed">
+<br>
 <thead>
         <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Year Published</th>
-            <th>Publisher</th>
-            <th>Page Count</th>
-            <th>MSRP</th>
+            <th class="text-center">Title</th>
+            <th class="text-center">Author</th>
+            <th class="text-center">Year Published</th>
+            <th class="text-center">Publisher</th>
+            <th class="text-center">Page Count</th>
+            <th class="text-center">MSRP</th>
         </tr>
 </thead>
     <tbody>
@@ -82,9 +83,11 @@
 </table>
 </div>
 
-<div>
+<h2><strong><center>Add Title</center></strong></h2>
+<div class="container-fluid text-center bg-2">
+<br>
 
-<form action="" method="post">
+<form action="" method="post" >
 
             <label for="title">Title:</label>
             <input type="text" name="title" id="title"><br>
@@ -105,15 +108,15 @@
             <input type="number" name="msrp" id="msrp"><br>
 
             <br>
-            <center><input type="submit" class="btn btn-danger"></a>
-            </center>
+            <center><input type="submit" class="btn btn-danger">
+            </center><br>
         </form>
 </div>
 
 </body>
 </p>
 
-<hr>
+<hr class="horizontal">
 <footer>
 <center>
 VH | Phone: 812-368-994 | Kelley School of Business</center>
