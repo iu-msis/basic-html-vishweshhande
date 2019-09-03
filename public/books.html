@@ -15,9 +15,13 @@
 
     </head>
 
-    <body style="background-color:lightgrey">
+    <header>
     <h1>
-        <center><img src="" height=50px><strong>Vishwesh Hande</strong></center></h1>
+      <center><img src="" height=50px><strong>Vishwesh Hande</strong></center>
+    </h1>
+  </header>
+
+    <body style="background-color:lightgrey">
 
     <nav class="navbar navbar-inverse">
 
@@ -79,33 +83,56 @@
                     <td>$15</td>
             </tr>
 
+            <tr>
+                    <td>The Audacity of Hope</td>
+                    <td>Barack Obama</td>
+                    <td>2006</td>
+                    <td>Crown/Three Rivers Press</td>
+                    <td>362</td>
+                    <td>$6.07</td>
+            </tr>
+
+
+
     </tbody>
 </table>
 </div>
 
-<h2><strong><center>Add Title</center></strong></h2>
+<h2><strong><center>Suggestions welcome</center></strong></h2>
 <div class="container-fluid text-center bg-2">
 <br>
 
 <form action="" method="post" >
+        <div class="form-group">
 
-            <label for="title">Title:</label>
-            <input type="text" name="title" id="title"><br>
+            <label for="title">Title</label>
+            <input type="text" class="form-control" name="title" id="title" placeholder="Make sure it blew your mind">
+        </div>
 
-            <label for="author">Author:</label>
-            <input type="text" name="author" id="author"><br>
+        <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" name="author" class="form-control" id="author" placeholder="Give due credit">
+        </div>
 
-            <label for="year">Year Published: </label>
-            <input type="date" name="year" id="year"><br>
+        <div class="form-group">
+            <label for="year">Year Published </label>
+            <input type="date" name="year" class="form-control" id="year">
+        </div>
 
-            <label for="publisher">Publisher:</label>
-            <input type="text" name="publisher" id="publisher"><br>
+        <div class="form-group">
+            <label for="publisher">Publisher</label>
+            <input type="text" name="publisher" class="form-control" id="publisher">
+        </div>
 
-            <label for="page">Page Count:</label>
-            <input type="number" name="page" id="page"><br>
+        <div class="form-group">
+            <label for="page">Page Count</label>
+            <input type="number" name="page" class="form-control" id="page" placeholder="I'll get through it">
+        </div>
 
-            <label for="msrp">MSRP:</label>
-            <input type="number" name="msrp" id="msrp"><br>
+        <div class="form-group">
+            <label for="msrp">MSRP</label>
+            <input type="number" name="msrp" min="0.01" step="0.01" class="form-control" id="msrp" placeholder="$$$">
+            </div>
 
             <br>
             <center><input type="submit" class="btn btn-danger">

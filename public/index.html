@@ -11,15 +11,21 @@
             <!--Compiled and minified JavaScript-->
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js.map"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js.map"></script>
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
             <link rel="stylesheet" href="css/style.css">
 
     </head>
+    <header>
+    <h1>
+      <center><img src="" height=50px><strong>Vishwesh Hande</strong></center>
+    </h1>
+  </header>
 
     <body style="background-color:lightgrey">
-    <h1>
-        <center><img src="" height=50px><strong>Vishwesh Hande</strong></center>
-      </h1>
-
     <nav class="navbar navbar-inverse">
 
             <ul class="nav navbar-nav">
@@ -38,24 +44,35 @@
 
     <div class="container-fluid text-center bg-1">
       <br>
-      <img src="img/john.jpg" class="img-circle" height=180px width=200px>
+      <a href="img/john.jpg" data-toggle="lightbox" data-title="John Mayer" data-footer="https://www.rollingstone.com/music/music-news/john-mayer-reveals-personal-stories-behind-four-wave-2-songs-118825/">
+      <img id="image" src="img/john.jpg" alt="https://www.rollingstone.com/music/music-news/john-mayer-reveals-personal-stories-behind-four-wave-2-songs-118825/" class="img-circle" height=180px width=200px>
+</a>
       <h3>John Mayer</h3>
     </div>
 
 
     <div class="container-fluid text-center bg-2">
       <br>
-      <img src="img/dire.jpg" class="img-circle" height=200px>
+        <a href="img/dire.jpg" data-toggle="lightbox" data-title="Dire Straits" data-footer="https://en.wikipedia.org/wiki/Dire_Straits">
+      <img id="image" src="img/dire.jpg" alt="https://en.wikipedia.org/wiki/Dire_Straits" class="img-circle" height=200px>
+</a>
       <h3>Dire Straits</h3>
     </div>
 
 
     <div class="container-fluid text-center bg-3">
       <br>
-      <img src="img/simon.jpg" class="img-circle" height=200px>
+        <a href="img/simon.jpg" data-toggle="lightbox" data-title="Simon & Garfunkel" data-footer="https://www.npr.org/sections/allsongs/2012/05/14/152036574/youve-never-heard-simon-and-garfunkels-bookends">
+      <img id="image" src="img/simon.jpg" alt="https://www.npr.org/sections/allsongs/2012/05/14/152036574/youve-never-heard-simon-and-garfunkels-bookends" class="img-circle" height=200px>
+</a>
       <h3>Simon and Garfunkel</h3>
     </div>
-
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                    event.preventDefault();
+                    $(this).ekkoLightbox();
+                });
+                </script>
   </h1></body>
       <hr  id="horizontal">
       <footer>
