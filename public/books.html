@@ -2,16 +2,16 @@
 <html>
     <head>
         <title>Books</title>
-            <!--Compiled and minified CSS-->
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-            <!--jQuery CDN-->
-            <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-
-            <!--Compiled and minified JavaScript-->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-            <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js.map"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js.map"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+        <link rel="stylesheet" href="css/style.css">
 
     </head>
 
@@ -97,6 +97,34 @@
     </tbody>
 </table>
 </div>
+<br>
+<div>
+  <div class="row">
+    <div class="col-md-4 bg-1 text-center">
+      <br>
+      <a href="img/pete.jpg" data-toggle="lightbox" data-title="Pete Sampras" data-footer="https://www.tennisfame.com/hall-of-famers/inductees/pete-sampras">
+    <img id="image" src="img/pete.jpg" class="img-circle" height=170px width=190px>
+</a>
+    <h3>Pete Sampras</h3>
+    </div>
+
+    <div class="col-md-4 bg-4 text-center">
+      <br>
+      <a href="img/obama2.jpg" data-toggle="lightbox" data-title="Barack Obama" data-footer="https://www.biography.com/us-president/barack-obama">
+    <img id="image" src="img/obama2.jpg" class="img-circle" height=170px width=190px>
+</a>
+    <h3>Barack Obama</h3>
+    </div>
+
+    <div class="col-md-4 bg-3 text-center">
+      <br>
+      <a href="img/william.jpg" data-toggle="lightbox" data-title="Will.I.Am" data-footer="https://www.rollingstone.com/music/music-features/william-future-entertainment-and-his-problems-hip-hop-762117/">
+    <img id="image" src="img/william.jpg" class="img-circle" height=170px width=190px>
+</a>
+    <h3>Will.I.Am</h3>
+    </div>
+    </div>
+    </div>
 
 <h2><strong><center>Suggestions welcome</center></strong></h2>
 <div class="container-fluid text-center bg-2">
@@ -139,7 +167,12 @@
             </center><br>
         </form>
 </div>
-
+<script>
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+            </script>
 </body>
 </p>
 
