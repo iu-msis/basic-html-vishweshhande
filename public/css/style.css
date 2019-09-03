@@ -37,12 +37,27 @@ h1{
         color: #555555;
       }
 
-    .horizontal{
+    #horizontal{
       border: 1px solid black;
     }
 
 
-    thead {background-color: #2a293e;
+    thead {
+      background-color: #2a293e;
                 color:white;
                 text-align: center;
     }
+
+    a{
+      text-decoration:none;
+    }
+    a:link{
+      color:white;
+    }
+
+    a:visited{
+      color:red;
+    }
+    a:hover{
+        color: black;
+      }
